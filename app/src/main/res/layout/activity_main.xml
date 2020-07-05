@@ -9,11 +9,9 @@
     <LinearLayout
         android:layout_width="409dp"
         android:layout_height="729dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginRight="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="1dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,11 +19,35 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/txtNome"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="@string/hintN1"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/pnTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hintN2"
+            android:inputType="phone" />
+
+        <Switch
+            android:id="@+id/switchAluga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/swSN"
+            android:textOff="NÂO"
+            android:textOn="SIM" />
+
+        <Button
+            android:id="@+id/buttontnCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Cadastrar"
+            android:text="@string/btnCad" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
