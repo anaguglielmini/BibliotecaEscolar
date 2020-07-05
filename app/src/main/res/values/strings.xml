@@ -3,5 +3,8 @@
     <string name="hintN1">Nome</string>
     <string name="hintN2">Telefone (xx) xxxx-xxxx</string>
     <string name="btnCad">Cadastrar</string>
-    <string name="swSN">Algugou algum Livro?</string>
+    <string name="swSN">Alugou algum Livro?</string>
+    <string name="textOff">Não</string>
+    <string name="textOn">Sim</string>
+    <string name="txtCliente">Cadastrar novo Cliente</string>
 </resources>

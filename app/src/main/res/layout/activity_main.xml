@@ -18,6 +18,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:fontFamily="serif-monospace"
+            android:text="@string/txtCliente"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
         <EditText
             android:id="@+id/txtNome"
             android:layout_width="match_parent"
@@ -39,8 +49,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/swSN"
-            android:textOff="NÂO"
-            android:textOn="SIM" />
+            android:textOff="@string/textOff"
+            android:textOn="@string/textOn" />
 
         <Button
             android:id="@+id/buttontnCadastrar"
