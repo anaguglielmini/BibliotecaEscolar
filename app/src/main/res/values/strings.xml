@@ -5,6 +5,6 @@
     <string name="btnCad">Cadastrar</string>
         <string name="txtCliente">Cadastrar novo Cliente</string>
     <string name="txtLivro">Livro alugado</string>
-    <string name="txtEmp">Data do Emprestimo</string>
-    <string name="txtDev">Data de Devolução</string>
+    <string name="txtEmp">Data Emprestimo</string>
+    <string name="txtDev">Data Devolução</string>
 </resources>

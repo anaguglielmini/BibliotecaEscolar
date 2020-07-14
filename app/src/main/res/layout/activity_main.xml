@@ -12,6 +12,8 @@
         android:layout_marginStart="2dp"
         android:layout_marginLeft="2dp"
         android:layout_marginTop="1dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
         android:gravity="center"
         android:orientation="vertical"
         android:paddingStart="50dp"
@@ -71,19 +73,19 @@
                 android:id="@+id/txtEmp"
                 android:layout_width="169dp"
                 android:layout_height="match_parent"
+                android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/txtEmp"
-                android:inputType="date"
-                android:autofillHints="" />
+                android:inputType="date" />
 
             <EditText
                 android:id="@+id/txtDev"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/txtDev"
-                android:inputType="date"
-                android:autofillHints="" />
+                android:inputType="date" />
         </LinearLayout>
 
         <Button
