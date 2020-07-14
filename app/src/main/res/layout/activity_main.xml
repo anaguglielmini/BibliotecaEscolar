@@ -9,14 +9,21 @@
     <LinearLayout
         android:layout_width="409dp"
         android:layout_height="729dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="1dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:paddingRight="20dp"
+        android:paddingLeft="60dp"
+        android:gravity="center"
+        android:paddingEnd="20dp"
+        android:paddingStart="60dp">
 
         <TextView
             android:id="@+id/textView4"
@@ -34,7 +41,8 @@
             android:layout_height="56dp"
             android:ems="10"
             android:hint="@string/hintN1"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/pnTelefone"
@@ -42,21 +50,14 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/hintN2"
-            android:inputType="phone" />
-
-        <Switch
-            android:id="@+id/switchAluga"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/swSN"
-            android:textOff="@string/textOff"
-            android:textOn="@string/textOn" />
+            android:inputType="phone"
+            android:autofillHints="" />
 
         <Button
-            android:id="@+id/buttontnCadastrar"
+            android:id="@+id/btnCadastrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="Cadastrar"
+            android:onClick="resposta"
             android:text="@string/btnCad" />
 
     </LinearLayout>
