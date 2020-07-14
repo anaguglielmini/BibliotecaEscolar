@@ -14,11 +14,19 @@ public class ResultadoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resultado);
             Intent intent = getIntent();
+
             String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
             String message2 = intent.getStringExtra(MainActivity.EXTRA_MESSAGE_VALOR);
-            String messageComp = "Nome: " + message + "\n" + "Número do telefone: " + message2;
+            String message3 = intent.getStringExtra(MainActivity.EXTRA_MESSAGE_LIVRO);
+            String message4 = intent.getStringExtra(MainActivity.EXTRA_MESSAGE_DATA);
+            String message5 = intent.getStringExtra(MainActivity.EXTRA_MESSAGE_DATA2);
+
+        String messageComp = "Nome: " + message + "\n" + "\n" + "Número do telefone: " + message2
+                + "\n" + "\n" + "Livro alugado: " + message3 + "\n"  + "\n" + "Data de Empréstimo: " + message4
+                + "\n" + "\n" + "Data de Devolução: " + message5;
+
             TextView txtResposta = new TextView(this);
-            txtResposta.setTextSize(30);
+            txtResposta.setTextSize(20);
             txtResposta.setText(messageComp);
             setContentView(txtResposta);
         }
